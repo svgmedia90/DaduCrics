@@ -1,79 +1,142 @@
 <!DOCTYPE html>
-<html>
+<<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dadu Bhai</title>
+<title>Dadu Bhai VIP</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800;900&display=swap" rel="stylesheet">
 
 <style>
-body{
+*{
     margin:0;
     padding:0;
-    font-family: Arial, sans-serif;
-    background:#000;
-    color:#fff;
-    text-align:center;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
 
-.container{
-    padding:60px 20px;
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#fff;
+    background:linear-gradient(-45deg,#000000,#111111,#1a1a1a,#000000);
+    background-size:400% 400%;
+    animation:bgMove 10s ease infinite;
+}
+
+@keyframes bgMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.card{
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,215,0,0.2);
+    padding:50px 30px;
+    border-radius:25px;
+    width:90%;
+    max-width:420px;
+    box-shadow:0 0 40px rgba(255,215,0,0.2);
+    animation:fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
 }
 
 h1{
-    font-size:42px;
+    font-size:40px;
     font-weight:900;
-    margin-bottom:20px;
+    background:linear-gradient(45deg,#FFD700,#FFB800,#FFF5B7);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    margin-bottom:15px;
+    letter-spacing:2px;
+    animation:glow 2s ease-in-out infinite alternate;
 }
 
-.highlight{
-    color:#FFD700;
+@keyframes glow{
+    from{text-shadow:0 0 10px #FFD700;}
+    to{text-shadow:0 0 25px #FFB800;}
 }
 
 p{
-    font-size:20px;
-    font-weight:bold;
+    font-size:18px;
+    font-weight:600;
     margin:10px 0;
+    color:#ddd;
 }
 
 .btn{
-    display:inline-block;
-    margin-top:30px;
-    padding:15px 40px;
-    font-size:22px;
-    font-weight:900;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    margin-top:25px;
+    padding:16px 40px;
+    font-size:18px;
+    font-weight:800;
     text-decoration:none;
     color:#fff;
-    background:#0088cc;
-    border-radius:8px;
+    border-radius:50px;
+    background:linear-gradient(45deg,#0088cc,#00aaff);
+    position:relative;
+    overflow:hidden;
+    transition:0.3s;
+    animation:pulse 2s infinite;
+}
+
+.btn img{
+    width:22px;
 }
 
 .btn:hover{
-    background:#00aaff;
+    transform:scale(1.1);
+    box-shadow:0 0 25px #00aaff;
 }
 
-.note{
-    margin-top:40px;
-    font-size:16px;
-    color:#aaa;
+@keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(0,170,255,0.7);}
+    70%{box-shadow:0 0 0 20px rgba(0,170,255,0);}
+    100%{box-shadow:0 0 0 0 rgba(0,170,255,0);}
+}
+
+.footer{
+    margin-top:25px;
+    font-size:13px;
+    color:#888;
+}
+
+@media(max-width:480px){
+    h1{font-size:32px;}
+    .card{padding:35px 20px;}
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="card">
 
-<h1><span class="highlight">DADU BHAI</span></h1>
+<h1>DADU BHAI</h1>
 
-<p>🔥 HIGH ACCURACY CRICKET PREDICTIONS</p>
-<p>💎 PREMIUM VIP LEAKS</p>
-<p>⚡ LIMITED MEMBERS ONLY</p>
+<p>🔥 High Accuracy Cricket Predictions</p>
+<p>💎 Premium VIP Leaks</p>
+<p>⚡ Limited Members Only</p>
 
 <a class="btn" href="https://t.me/+JO8pqvMSqe4zYjY1" target="_blank">
-JOIN DADU BHAI VIP
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+    JOIN DADU BHAI VIP
 </a>
 
-<div class="note">
+<div class="footer">
 Serious Earners Only | 2026
 </div>
 
